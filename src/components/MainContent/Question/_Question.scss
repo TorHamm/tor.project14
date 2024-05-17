@@ -1,0 +1,78 @@
+@mixin icon($color) {
+    outline: 3px solid $color;
+    .icon {
+        background-color: $color;
+        h4 {
+            color: white;
+        }
+    }
+}
+
+.question {
+    @include flex-column(24px);
+    .questionText {
+        @include flex-column(12px);
+    }
+    .progressBar {
+        padding: 4px;
+        border-radius: 8px;
+        .progressPercentage {
+            height: 8px;
+            border-radius: 4px;
+            background-color: $purple-1;
+        }
+    }
+}
+
+.options {
+    @include flex-column(12px);
+    .choices {
+        #selected {
+            @include icon($purple-1);
+        }
+        .correct {
+            @include icon($green);
+        }
+        .wrong {
+            @include icon($red);
+            img {
+                content:url('/src/assets/images/icon-incorrect.svg');
+            }
+        }
+    }
+    .button {
+        @include flex-column(12px);
+        .error {
+            @include flex-row(8px);
+            justify-content : center;
+            align-items: center;
+            h4 {
+                color: $red;
+            }
+        }
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 481px) {
+    .question {
+        row-gap: 40px;
+        .questionText {
+            row-gap: 27px;
+        }
+    }
+    .options {
+        row-gap: 32px;
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+    .question {
+        justify-content: space-between;
+        max-width: 452px;
+        max-height: 465px;
+    }
+}

@@ -1,0 +1,109 @@
+@import '../../scss/abstract/mixins';
+@import '../../scss/abstract/colors';
+
+header {
+    @include flex-row(0px);
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 72px;
+}
+
+.themeSwitch {
+    @include flex-row(8px);
+    align-items: center;
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+   }
+   
+   .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+   }
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $purple-1;
+    transition: .2s;
+    border-radius: 30px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+   }
+   
+   input:checked + .slider::before {
+    background-color: white;
+   }
+   
+   input:checked + .slider {
+    background-color: $purple-1;
+   }
+   
+   input:focus + .slider {
+    box-shadow: 0 0 1px $purple-1;
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(12px);
+   }
+
+@media only screen and (min-width: 481px) {
+    header {
+        padding: 40px 64px;
+        height: 135px;
+    }
+    .themeSwitch {
+        @include flex-row(16px);
+        align-items: center;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .switch {
+        width: 48px;
+        height: 28px;
+        .slider::before{
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        input:checked + .slider:before {
+            transform: translateX(20px);
+           }
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+    header {
+        padding: 83px 0;
+        width: 1160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'rubik';
+}
+
+.score {
+    font-size: 88px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+i {
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 481px) {
+    .score {
+        font-size: 144px;
+    }
+    h1 , h2 {
+        font-size: 64px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    p  {
+        font-size: 24px;
+    }
+    i {
+        font-size: 20px;
+    }
+}

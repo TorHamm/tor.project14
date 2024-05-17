@@ -1,0 +1,31 @@
+.resaultContainer {
+    @include flex-column(12px);
+    .resaultPlate {
+        @include flex-column(16px);
+        justify-content: center;
+        padding: 32px;
+        border-radius: 12px;
+        .resaultText {
+            @include flex-column(16px);
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .resaultContainer {
+        row-gap: 32px;
+        .resaultPlate {
+            row-gap: 40px;
+            padding: 48px;
+            border-radius: 24px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+    .resaultContainer {
+        width: 564px;
+    }
+}

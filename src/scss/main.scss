@@ -1,0 +1,19 @@
+//* ABSTRACT
+@import 'abstract/mixins';
+@import 'abstract/colors';
+
+//* BASE
+@import 'base/reset';
+@import 'base/typography';
+
+//* COMPONENTS
+@import './components/icon';
+@import './components/button';
+
+@import '../components/Header/Header';
+@import '../components/MainContent/Main';
+@import '../components/MainContent/StartMenu/StartMenu';
+@import '../components/MainContent/Question/Question';
+@import '../components/MainContent/DisplayScore/ResaultContent.scss';
+
+@import './app.scss';

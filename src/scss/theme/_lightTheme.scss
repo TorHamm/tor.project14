@@ -11,7 +11,7 @@ p {
 body {
     background:
     $light-1
-    url('/src/assets/images/pattern-background-mobile-light.svg')
+    url('/images/pattern-background-mobile-light.svg')
     top left/contain
     no-repeat;
 }
@@ -29,7 +29,7 @@ button {
     body {
         background:
         $light-1
-        url('/src/assets/images/pattern-background-tablet-light.svg')
+        url('/images/pattern-background-tablet-light.svg')
         top left
         no-repeat;
     }
@@ -39,7 +39,7 @@ button {
     body {
         background:
         $light-1
-        url('/src/assets/images/pattern-background-desktop-light.svg')
+        url('/images/pattern-background-desktop-light.svg')
         center/cover
         no-repeat;
     }

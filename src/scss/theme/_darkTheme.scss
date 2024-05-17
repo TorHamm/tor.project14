@@ -11,7 +11,7 @@ p {
 body {
     background:
     $dark-3
-    url('/src/assets/images/pattern-background-mobile-dark.svg')
+    url('/images/pattern-background-mobile-dark.svg')
     top left/contain
     no-repeat;
 }
@@ -29,7 +29,7 @@ button {
     body {
         background:
         $dark-3
-        url('/src/assets/images/pattern-background-tablet-dark.svg')
+        url('/images/pattern-background-tablet-dark.svg')
         top left
         no-repeat;
     }
@@ -39,7 +39,7 @@ button {
     body {
         background:
         $dark-3
-        url('/src/assets/images/pattern-background-desktop-dark.svg')
+        url('/images/pattern-background-desktop-dark.svg')
         center/cover
         no-repeat;
     }

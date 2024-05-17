@@ -30,7 +30,7 @@ const QuestionContent = ({ selectedSubject }: QuestionContentProps) => {
       } else if (selectedChoice !== null) {
         setSelectedChoice(null);
         setChoiceNotSelected(false);
-        setImgCrr("/src/assets/images/icon-correct.svg");
+        setImgCrr("/images/icon-correct.svg");
         setButtonText("Next Question");
         setPointer("none")
 
@@ -113,7 +113,7 @@ const QuestionContent = ({ selectedSubject }: QuestionContentProps) => {
               <h4>{buttonText}</h4>
           </button>
           <div className='error' style={handleErrorDisplay} id='error'>
-            <img src='/src/assets/images/icon-error.svg'></img>
+            <img src='/images/icon-error.svg'></img>
             <h4>Please select an answer</h4>
           </div>
         </div>

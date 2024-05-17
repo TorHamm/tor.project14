@@ -8,10 +8,10 @@ interface HeaderProps {
 }
 
 const Header = ({ children , getTheme }: HeaderProps) => {
-  const sunDark = "/src/assets/images/icon-sun-dark.svg";
-  const sunLight = "/src/assets/images/icon-sun-light.svg";
-  const moonDark = "/src/assets/images/icon-moon-dark.svg";
-  const moonLight = "/src/assets/images/icon-moon-light.svg";
+  const sunDark = "/images/icon-sun-dark.svg";
+  const sunLight = "/images/icon-sun-light.svg";
+  const moonDark = "/images/icon-moon-dark.svg";
+  const moonLight = "/images/icon-moon-light.svg";
 
   const savedTheme = localStorage.getItem("theme");
   

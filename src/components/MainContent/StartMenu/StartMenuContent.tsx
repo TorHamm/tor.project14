@@ -7,7 +7,7 @@ const StartMenuContent = () => {
         <Link key={index} to={`/Question/${index}`}>
             <div className='selectionIdle'>
                 <div className='choiceText'>
-                    <img src={`src/${subject.icon.slice(2)}`} alt={`${subject.title}-icon`} id={subject.title} className='icon'></img>
+                    <img src={`${subject.icon.slice(8)}`} alt={`${subject.title}-icon`} id={subject.title} className='icon'></img>
                     <h4>{subject.title}</h4>
                 </div>
             </div>

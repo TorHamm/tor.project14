@@ -13,7 +13,7 @@ const Question = () => {
       {quizData && (
         <>
           <img
-            src={`/src/${quizData.icon.slice(2)}`}
+            src={`${quizData.icon.slice(8)}`}
             alt={`${quizData.title}-icon`}
             id={quizData.title}
             className='icon'></img>
